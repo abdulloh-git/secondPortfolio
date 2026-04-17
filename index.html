@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amir Tashkentov — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ══════════════════ NAV ══════════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" data-magnetic>AT</a>
+      <nav class="nav__links">
+        <a href="#about"    class="nav__link" data-nav-link>About</a>
+        <a href="#skills"   class="nav__link" data-nav-link>Skills</a>
+        <a href="#projects" class="nav__link" data-nav-link>Projects</a>
+        <a href="#contact"  class="nav__link" data-nav-link>Contact</a>
+      </nav>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a href="#about"    class="nav__mobile-link" data-mobile-link>About</a>
+      <a href="#skills"   class="nav__mobile-link" data-mobile-link>Skills</a>
+      <a href="#projects" class="nav__mobile-link" data-mobile-link>Projects</a>
+      <a href="#contact"  class="nav__mobile-link" data-mobile-link>Contact</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════ HERO ══════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-grid"></div>
+
+      <div class="hero__content">
+        <div class="hero__eyebrow reveal-up">
+          <span class="dot"></span>
+          ProWeb Graduate · Class of 2024
+        </div>
+
+        <h1 class="hero__name reveal-up" style="--delay:0.1s">
+          Amir<br><em>Tashkentov</em>
+        </h1>
+
+        <p class="hero__role reveal-up" style="--delay:0.2s">
+          <span id="typewriter"></span><span class="cursor-blink">|</span>
+        </p>
+
+        <p class="hero__sub reveal-up" style="--delay:0.3s">
+          Building fast, accessible, and delightfully interactive web experiences.
+          Based in <strong>Tashkent, Uzbekistan</strong>.
+        </p>
+
+        <div class="hero__cta reveal-up" style="--delay:0.4s">
+          <a href="#projects" class="btn btn--primary" data-magnetic>View Work</a>
+          <a href="#contact"  class="btn btn--ghost"   data-magnetic>Let's Talk</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll-hint reveal-up" style="--delay:0.6s">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+
+      <!-- Floating accent badges -->
+      <div class="hero__badge hero__badge--1 reveal-up" style="--delay:0.5s">
+        <span class="mono">React 18</span>
+      </div>
+      <div class="hero__badge hero__badge--2 reveal-up" style="--delay:0.65s">
+        <span class="mono">TypeScript</span>
+      </div>
+      <div class="hero__badge hero__badge--3 reveal-up" style="--delay:0.7s">
+        <span class="mono">Next.js</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════ ABOUT ══════════════════ -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-label reveal-up"><span class="mono">01 /</span> About</div>
+
+        <div class="about__grid">
+          <div class="about__text reveal-up">
+            <h2 class="section-title">Crafting interfaces<br>that <em>matter</em></h2>
+            <p>
+              I completed the <strong>ProWeb Frontend Development Course</strong> — an intensive 10-month programme covering the full modern frontend stack. During the course I shipped 6 production-grade projects, contributed to an open-source component library, and mentored junior peers in React fundamentals.
+            </p>
+            <p>
+              Before ProWeb I studied Computer Science at TUIT. I bring an engineering mindset to every UI: performance budgets, accessibility audits, and testable, composable code are non-negotiable for me.
+            </p>
+            <div class="about__stats">
+              <div class="stat">
+                <span class="stat__num">10</span>
+                <span class="stat__label">months of intensive training</span>
+              </div>
+              <div class="stat">
+                <span class="stat__num">6</span>
+                <span class="stat__label">production projects shipped</span>
+              </div>
+              <div class="stat">
+                <span class="stat__num">3</span>
+                <span class="stat__label">open-source contributions</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__card reveal-up" style="--delay:0.15s">
+            <div class="about__photo-frame">
+              <div class="about__photo-placeholder">AT</div>
+            </div>
+            <div class="about__meta">
+              <div class="meta-row">
+                <span class="mono meta-key">location</span>
+                <span class="meta-val">Tashkent, UZ</span>
+              </div>
+              <div class="meta-row">
+                <span class="mono meta-key">course</span>
+                <span class="meta-val">ProWeb Frontend</span>
+              </div>
+              <div class="meta-row">
+                <span class="mono meta-key">graduation</span>
+                <span class="meta-val">June 2024</span>
+              </div>
+              <div class="meta-row">
+                <span class="mono meta-key">status</span>
+                <span class="meta-val available">Available for hire</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ SKILLS ══════════════════ -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-label reveal-up"><span class="mono">02 /</span> Skills</div>
+        <h2 class="section-title reveal-up">Technical<br><em>Arsenal</em></h2>
+
+        <div class="skills__grid">
+
+          <div class="skill-category reveal-up">
+            <h3 class="skill-category__title">Core Languages</h3>
+            <div class="skill-bars">
+              <div class="skill-bar" data-level="95">
+                <div class="skill-bar__info"><span>HTML5 / Semantic</span><span class="mono skill-pct">95%</span></div>
+                <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="92">
+                <div class="skill-bar__info"><span>CSS3 / Sass / Tailwind</span><span class="mono skill-pct">92%</span></div>
+                <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="88">
+                <div class="skill-bar__info"><span>JavaScript (ES2023+)</span><span class="mono skill-pct">88%</span></div>
+                <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="82">
+                <div class="skill-bar__info"><span>TypeScript</span><span class="mono skill-pct">82%</span></div>
+                <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category reveal-up" style="--delay:0.1s">
+            <h3 class="skill-category__title">Frameworks & Libraries</h3>
+            <div class="skill-bars">
+              <div class="skill-bar" data-level="90">
+                <div class="skill-bar__info"><span>React 18 / Next.js</span><span class="mono skill-pct">90%</span></div>
+                <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="78">
+                <div class="skill-bar__info"><span>Vue 3 / Nuxt</span><span class="mono skill-pct">78%</span></div>
+                <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="85">
+                <div class="skill-bar__info"><span>Redux Toolkit / Zustand</span><span class="mono skill-pct">85%</span></div>
+                <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="80">
+                <div class="skill-bar__info"><span>TanStack Query</span><span class="mono skill-pct">80%</span></div>
+                <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category reveal-up" style="--delay:0.2s">
+            <h3 class="skill-category__title">Tooling & Testing</h3>
+            <div class="skill-bars">
+              <div class="skill-bar" data-level="85">
+                <div class="skill-bar__info"><span>Vite / Webpack</span><span class="mono skill-pct">85%</span></div>
+                <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="75">
+                <div class="skill-bar__info"><span>Vitest / Jest / RTL</span><span class="mono skill-pct">75%</span></div>
+                <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="70">
+                <div class="skill-bar__info"><span>Playwright / Cypress</span><span class="mono skill-pct">70%</span></div>
+                <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+              </div>
+              <div class="skill-bar" data-level="80">
+                <div class="skill-bar__info"><span>Git / CI/CD / Docker</span><span class="mono skill-pct">80%</span></div>
+                <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Tech pill cloud -->
+        <div class="tech-cloud reveal-up">
+          <span class="tech-pill">React</span>
+          <span class="tech-pill">TypeScript</span>
+          <span class="tech-pill accent">Next.js</span>
+          <span class="tech-pill">Vue 3</span>
+          <span class="tech-pill">Tailwind CSS</span>
+          <span class="tech-pill">Sass</span>
+          <span class="tech-pill">Framer Motion</span>
+          <span class="tech-pill accent">RTK</span>
+          <span class="tech-pill">Zustand</span>
+          <span class="tech-pill">TanStack Query</span>
+          <span class="tech-pill">Zod</span>
+          <span class="tech-pill">React Hook Form</span>
+          <span class="tech-pill accent">Vitest</span>
+          <span class="tech-pill">Playwright</span>
+          <span class="tech-pill">GraphQL</span>
+          <span class="tech-pill">REST APIs</span>
+          <span class="tech-pill">Figma</span>
+          <span class="tech-pill">i18n</span>
+          <span class="tech-pill">a11y</span>
+          <span class="tech-pill">Storybook</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ PROJECTS ══════════════════ -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-label reveal-up"><span class="mono">03 /</span> Projects</div>
+        <h2 class="section-title reveal-up">Selected<br><em>Work</em></h2>
+
+        <!-- Filter bar -->
+        <div class="filter-bar reveal-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="react">React</button>
+          <button class="filter-btn" data-filter="vue">Vue</button>
+          <button class="filter-btn" data-filter="fullstack">Full-stack</button>
+          <button class="filter-btn" data-filter="oss">Open Source</button>
+        </div>
+
+        <!-- Sort -->
+        <div class="sort-bar reveal-up">
+          <span class="mono sort-label">Sort:</span>
+          <button class="sort-btn active" data-sort="newest">Newest</button>
+          <button class="sort-btn" data-sort="oldest">Oldest</button>
+          <button class="sort-btn" data-sort="az">A–Z</button>
+        </div>
+
+        <!-- Project grid -->
+        <div class="projects__grid" id="projectGrid">
+
+          <article class="project-card" data-category="react fullstack" data-date="2024-05" data-title="EduFlow LMS">
+            <div class="project-card__header">
+              <div class="project-card__num mono">01</div>
+              <div class="project-card__tags">
+                <span class="ptag">React</span>
+                <span class="ptag">TypeScript</span>
+                <span class="ptag">RTK</span>
+              </div>
+            </div>
+            <h3 class="project-card__title">EduFlow LMS</h3>
+            <p class="project-card__desc">A full-featured learning management system with real-time progress tracking, quiz engine, and role-based dashboards. Built for a Tashkent EdTech startup.</p>
+            <div class="project-card__highlights">
+              <span>95 Lighthouse score</span>
+              <span>TanStack Query</span>
+              <span>Jest 87% coverage</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="#" class="project-link" data-magnetic>Live Demo ↗</a>
+              <a href="#" class="project-link mono">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card featured" data-category="react" data-date="2024-03" data-title="DesignSys UI">
+            <div class="project-card__header">
+              <div class="project-card__num mono">02</div>
+              <div class="project-card__tags">
+                <span class="ptag accent">Featured</span>
+                <span class="ptag">React</span>
+                <span class="ptag">Storybook</span>
+              </div>
+            </div>
+            <h3 class="project-card__title">DesignSys UI Kit</h3>
+            <p class="project-card__desc">An open-source component library with 40+ accessible components, dark/light theming, and full TypeScript types. 200+ GitHub stars in 3 months.</p>
+            <div class="project-card__highlights">
+              <span>40+ components</span>
+              <span>WCAG 2.1 AA</span>
+              <span>Storybook docs</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="#" class="project-link" data-magnetic>Storybook ↗</a>
+              <a href="#" class="project-link mono">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="vue fullstack" data-date="2024-01" data-title="MarketHub">
+            <div class="project-card__header">
+              <div class="project-card__num mono">03</div>
+              <div class="project-card__tags">
+                <span class="ptag">Vue 3</span>
+                <span class="ptag">Nuxt</span>
+                <span class="ptag">Pinia</span>
+              </div>
+            </div>
+            <h3 class="project-card__title">MarketHub</h3>
+            <p class="project-card__desc">A marketplace platform with SSR, real-time inventory, multi-language support (i18n), and Stripe-powered checkout. Deployed on Vercel Edge.</p>
+            <div class="project-card__highlights">
+              <span>SSR / ISR</span>
+              <span>i18n · 4 langs</span>
+              <span>Playwright E2E</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="#" class="project-link" data-magnetic>Live Demo ↗</a>
+              <a href="#" class="project-link mono">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="react oss" data-date="2023-11" data-title="AnimateKit">
+            <div class="project-card__header">
+              <div class="project-card__num mono">04</div>
+              <div class="project-card__tags">
+                <span class="ptag">React</span>
+                <span class="ptag">Framer Motion</span>
+                <span class="ptag">OSS</span>
+              </div>
+            </div>
+            <h3 class="project-card__title">AnimateKit</h3>
+            <p class="project-card__desc">A declarative animation toolkit for React, wrapping Framer Motion with a composable hook API. Features scroll-triggered reveals, magnetic buttons, and page transitions.</p>
+            <div class="project-card__highlights">
+              <span>npm published</span>
+              <span>Tree-shakeable</span>
+              <span>Zero config</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="#" class="project-link" data-magnetic>npm ↗</a>
+              <a href="#" class="project-link mono">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="fullstack" data-date="2023-09" data-title="TaskFlow">
+            <div class="project-card__header">
+              <div class="project-card__num mono">05</div>
+              <div class="project-card__tags">
+                <span class="ptag">React</span>
+                <span class="ptag">GraphQL</span>
+                <span class="ptag">Zustand</span>
+              </div>
+            </div>
+            <h3 class="project-card__title">TaskFlow</h3>
+            <p class="project-card__desc">A Kanban-style project management tool with drag-and-drop, real-time collaboration via WebSockets, and a custom GraphQL API built in Node.js.</p>
+            <div class="project-card__highlights">
+              <span>WebSockets</span>
+              <span>DnD Kit</span>
+              <span>GraphQL subscriptions</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="#" class="project-link" data-magnetic>Live Demo ↗</a>
+              <a href="#" class="project-link mono">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="vue oss" data-date="2023-07" data-title="VueForms">
+            <div class="project-card__header">
+              <div class="project-card__num mono">06</div>
+              <div class="project-card__tags">
+                <span class="ptag">Vue 3</span>
+                <span class="ptag">Zod</span>
+                <span class="ptag">OSS</span>
+              </div>
+            </div>
+            <h3 class="project-card__title">VueForms Pro</h3>
+            <p class="project-card__desc">Schema-driven form generator for Vue 3 with Zod validation, async field dependencies, and a11y-first design. Contributed as part of ProWeb OSS module.</p>
+            <div class="project-card__highlights">
+              <span>Schema-driven</span>
+              <span>Zod validation</span>
+              <span>ARIA complete</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="#" class="project-link" data-magnetic>Docs ↗</a>
+              <a href="#" class="project-link mono">GitHub ↗</a>
+            </div>
+          </article>
+
+        </div>
+        <!-- empty state -->
+        <div class="empty-state" id="emptyState" style="display:none">
+          <span class="mono">No projects match this filter.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ CONTACT ══════════════════ -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-label reveal-up"><span class="mono">04 /</span> Contact</div>
+
+        <div class="contact__grid">
+          <div class="contact__left reveal-up">
+            <h2 class="section-title">Let's build<br>something <em>great</em></h2>
+            <p>Open for full-time roles, freelance projects, and interesting collaborations. I reply within 24 hours.</p>
+
+            <div class="contact__links">
+              <a href="mailto:amir@example.com" class="contact__social" data-magnetic>
+                <span class="mono">01</span> amir@example.com
+              </a>
+              <a href="https://github.com" target="_blank" class="contact__social" data-magnetic>
+                <span class="mono">02</span> github.com/amirtashkentov
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="contact__social" data-magnetic>
+                <span class="mono">03</span> linkedin.com/in/amirtashkentov
+              </a>
+            </div>
+          </div>
+
+          <div class="contact__right reveal-up" style="--delay:0.15s">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="fname" class="form-label">Name</label>
+                <input type="text"  id="fname" name="name"    class="form-input" placeholder="Your name"  autocomplete="name" />
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="femail" class="form-label">Email</label>
+                <input type="email" id="femail" name="email"   class="form-input" placeholder="your@email.com" autocomplete="email" />
+                <span class="form-error" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="fsubject" class="form-label">Subject</label>
+                <input type="text"  id="fsubject" name="subject" class="form-input" placeholder="Project idea, job offer…" />
+                <span class="form-error" id="subjectError"></span>
+              </div>
+              <div class="form-group">
+                <label for="fmessage" class="form-label">Message</label>
+                <textarea id="fmessage" name="message" class="form-input form-textarea" placeholder="Tell me about your project…" rows="5"></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" id="formSubmitBtn" data-magnetic>
+                <span class="btn-text">Send Message</span>
+                <span class="btn-spinner" style="display:none">Sending…</span>
+              </button>
+              <div class="form-success" id="formSuccess" style="display:none">
+                Message sent — I'll get back to you soon!
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="mono footer__copy">© 2024 Amir Tashkentov</span>
+      <span class="mono footer__built">Built with vanilla HTML · CSS · JS</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

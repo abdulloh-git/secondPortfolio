@@ -40,48 +40,40 @@
   <main>
 
     <!-- ══════════════════ HERO ══════════════════ -->
+    <!-- ✏️  EDIT GUIDE — only change the 🟡 marked lines below -->
     <section class="hero" id="hero">
       <div class="hero__bg-grid"></div>
 
       <div class="hero__content">
+
+        <!-- 🟡 Your badge text (e.g. course name + year) -->
         <div class="hero__eyebrow reveal-up">
           <span class="dot"></span>
           ProWeb Graduate · Class of 2024
         </div>
 
+        <!-- 🟡 First name on first line, last name on second line -->
         <h1 class="hero__name reveal-up" style="--delay:0.1s">
           Amir<br><em>Tashkentov</em>
         </h1>
 
+        <!-- Typewriter — edit the roles array in script.js -->
         <p class="hero__role reveal-up" style="--delay:0.2s">
           <span id="typewriter"></span><span class="cursor-blink">|</span>
         </p>
 
+        <!-- 🟡 Your short bio sentence and city -->
         <p class="hero__sub reveal-up" style="--delay:0.3s">
           Building fast, accessible, and delightfully interactive web experiences.
           Based in <strong>Tashkent, Uzbekistan</strong>.
         </p>
 
+        <!-- 🟡 Button labels (keep the href values as-is) -->
         <div class="hero__cta reveal-up" style="--delay:0.4s">
           <a href="#projects" class="btn btn--primary" data-magnetic>View Work</a>
           <a href="#contact"  class="btn btn--ghost"   data-magnetic>Let's Talk</a>
         </div>
-      </div>
 
-      <div class="hero__scroll-hint reveal-up" style="--delay:0.6s">
-        <div class="scroll-line"></div>
-        <span>Scroll</span>
-      </div>
-
-      <!-- Floating accent badges -->
-      <div class="hero__badge hero__badge--1 reveal-up" style="--delay:0.5s">
-        <span class="mono">React 18</span>
-      </div>
-      <div class="hero__badge hero__badge--2 reveal-up" style="--delay:0.65s">
-        <span class="mono">TypeScript</span>
-      </div>
-      <div class="hero__badge hero__badge--3 reveal-up" style="--delay:0.7s">
-        <span class="mono">Next.js</span>
       </div>
     </section>
 
@@ -218,7 +210,6 @@
 
         </div>
 
-        <!-- Tech pill cloud -->
         <div class="tech-cloud reveal-up">
           <span class="tech-pill">React</span>
           <span class="tech-pill">TypeScript</span>
@@ -250,7 +241,6 @@
         <div class="section-label reveal-up"><span class="mono">03 /</span> Projects</div>
         <h2 class="section-title reveal-up">Selected<br><em>Work</em></h2>
 
-        <!-- Filter bar -->
         <div class="filter-bar reveal-up">
           <button class="filter-btn active" data-filter="all">All</button>
           <button class="filter-btn" data-filter="react">React</button>
@@ -259,7 +249,6 @@
           <button class="filter-btn" data-filter="oss">Open Source</button>
         </div>
 
-        <!-- Sort -->
         <div class="sort-bar reveal-up">
           <span class="mono sort-label">Sort:</span>
           <button class="sort-btn active" data-sort="newest">Newest</button>
@@ -267,7 +256,6 @@
           <button class="sort-btn" data-sort="az">A–Z</button>
         </div>
 
-        <!-- Project grid -->
         <div class="projects__grid" id="projectGrid">
 
           <article class="project-card" data-category="react fullstack" data-date="2024-05" data-title="EduFlow LMS">
@@ -403,7 +391,6 @@
           </article>
 
         </div>
-        <!-- empty state -->
         <div class="empty-state" id="emptyState" style="display:none">
           <span class="mono">No projects match this filter.</span>
         </div>
@@ -437,17 +424,17 @@
             <form class="contact-form" id="contactForm" novalidate>
               <div class="form-group">
                 <label for="fname" class="form-label">Name</label>
-                <input type="text"  id="fname" name="name"    class="form-input" placeholder="Your name"  autocomplete="name" />
+                <input type="text" id="fname" name="name" class="form-input" placeholder="Your name" autocomplete="name" />
                 <span class="form-error" id="nameError"></span>
               </div>
               <div class="form-group">
                 <label for="femail" class="form-label">Email</label>
-                <input type="email" id="femail" name="email"   class="form-input" placeholder="your@email.com" autocomplete="email" />
+                <input type="email" id="femail" name="email" class="form-input" placeholder="your@email.com" autocomplete="email" />
                 <span class="form-error" id="emailError"></span>
               </div>
               <div class="form-group">
                 <label for="fsubject" class="form-label">Subject</label>
-                <input type="text"  id="fsubject" name="subject" class="form-input" placeholder="Project idea, job offer…" />
+                <input type="text" id="fsubject" name="subject" class="form-input" placeholder="Project idea, job offer…" />
                 <span class="form-error" id="subjectError"></span>
               </div>
               <div class="form-group">
